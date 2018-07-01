@@ -1,0 +1,16 @@
+<div> <%= link_to "Back to all coupons", coupons_path %> </div>
+
+<h3>New Coupon:</h3>
+
+<%= form_tag coupons_path do %>
+
+  <label>Coupon name:</label><br>
+  <%= text_field_tag :'coupon_name' %><br>
+  <label>Coupon code:</label><br>
+  <%= text_field_tag :'coupon_code' %><br>
+  <label>Store:</label><br>
+  <%= text_field_tag :'store' %><br>
+
+  <%= submit_tag "Submit Coupon" %>
+
+<% end %>
