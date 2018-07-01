@@ -1,0 +1,10 @@
+<div> <%= link_to "Back to all coupons", coupons_path %> </div>
+
+<h4> <%= @coupon.name %>: </h4>
+
+<div>
+  <label><b>Coupon code:</b></label><br>
+  <%= @coupon.coupon_code %><br></br>
+  <label><b>Store:</b></label><br>
+  <%= @coupon.store %>
+</div>
