@@ -1,0 +1,6 @@
+<h1><FREESTUFF/h1>
+<% @coupons.each do |coupon| %>
+<div class="">
+    <label for="">  <%= link_to coupon.coupon_code, coupon%> can be used in <%= coupon.store %> </label>
+</div>
+<% end %>
