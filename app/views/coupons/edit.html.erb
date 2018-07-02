@@ -1,0 +1,10 @@
+Edit Page
+<%= form_for @coupon do |t| %>
+    <%= t.label :coupon_code %>
+    <%= t.text_field :coupon_code %>
+    <%= t.label :store %>
+    <%= t.text_field :store %>
+    <%= t.submit id: "Submit Coupon" %>
+<% end %>
+
+<%= link_to "Cancel Edit", coupon_path(@coupon) %>
